@@ -192,7 +192,12 @@ app.get("/transaction", function (req, res) {
 
     });
 });
+let port = process.env.PORT;
+if (port == null || port =="")
+{
+    port=3000;
+}
 
-app.listen(3000, function (req, res) {
-    console.log("Welcome to the Server")
+app.listen(port, function () {
+    console.log("Server has started successfully");
 });
