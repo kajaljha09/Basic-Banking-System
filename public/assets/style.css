@@ -1,0 +1,67 @@
+
+#body{
+    background-image: url("piggy-3612929_1920.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+#body h1{
+    font-size: 4rem;
+}
+.title{
+    position: relative;
+    top:30vh;
+    left: 10vw;
+    padding:30px;
+    color:#fff;
+    text-shadow:2px 2px 2px #000;
+    font-family:'Times New Roman', Times, serif;
+    
+}
+
+
+
+.tick{
+   
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:30vh
+    
+
+}
+#success{
+    text-align: center;
+}
+
+.details{
+    font-size: 1rem;
+}
+#customer{
+    
+    height: 100vh;
+}
+.table{
+    margin:80px 0px 20px 0px;
+    
+}
+.navbar{
+    background-color: #000;
+    position:absolute;
+}
+.navbar a{
+    color: #fff;
+    padding:10px;
+    margin-left:10px;
+    
+}
+
+
+.navbar-brand{
+    font-size: 28px;
+}
+.nav-link:hover{
+    background-color: red;
+    color: #fff;
+} 

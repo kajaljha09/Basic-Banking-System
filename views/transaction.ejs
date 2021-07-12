@@ -1,0 +1,32 @@
+<%- include ('header'); -%>
+<section id="customer">
+
+    <div class="customerTable table-responsive-sm">
+        <table class="table table-striped text-center table-hover ">
+            <thead>
+                <tr>
+                    
+                    <th>From</th>
+                    <th>To</th>
+                    <th>Amount</th>
+                    <th>Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <% newData.forEach(function(item){ %>
+                        <td><%= item.from %> </td>
+                        <td><%= item.to %></td>
+                        <td><%= item.amount %></td>
+                        <td><%= item.ts %></td>
+                        
+                        </tr>
+                    <%});%>
+
+
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<%- include ('footer'); -%>

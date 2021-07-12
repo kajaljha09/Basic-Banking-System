@@ -1,0 +1,76 @@
+<%- include ('header'); -%>
+
+    <section id="customerdata">
+
+        <h3 style="margin-top:100px;text-align: center;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;font-weight:bolder;">
+            <%=name%>'s Account
+        </h3>
+        <table class="table table-striped my-4  text-center">
+            <thead>
+                <tr>
+
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Current Balance</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <%= name %>
+                    </td>
+                    <td>
+                        <%= emailId %>
+                    </td>
+                    <td>
+                        <%= currentbalance %>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+
+    </section>
+    <section id="transfer">
+        <div class="form">
+             <h2 style="font-size:20px;color:grey;text-align: center;">Transfer Money</h2>
+            <form id="transferform" action="#" method="POST" style="font-weight: bold;">
+                <table style="margin:0 auto;border:2px solid grey;height:30vh;width:45vw;box-shadow: 4px 4px 4px grey;">
+                    <tr>
+                        <td>Transfer To:</td>
+                        <td><select name="actholder">
+                                <% newdata.forEach(function(item){%>
+                                    <option>
+
+                                        <%= item.name%>
+
+                                    </option>
+                                    <% }); %>
+
+                            </select>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            Amount to be transfered :
+                        </td>
+                        <td>
+                            <input type="number" name="inputvalue" placeholder="amount in rupees" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <button class="btn btn-danger"type="submit">Transfer</button>
+                        </td>
+
+                    </tr>
+                    
+                </table>
+            </form>
+
+        </div>
+    </section>
+    <%- include ('footer'); -%>
